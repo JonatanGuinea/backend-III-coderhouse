@@ -25,10 +25,12 @@ mongoose.connect(configJS.MONGODB_URI, {
 // Rutas
 app.use('/api/mocks', mocksRouter);
 
-app.get('/', async(req, res)=>{
+app.get('/',(req, res)=>{
 
-        res.send(word)
-   
+   const saludo = {
+    message: "Welcome to the Mock API"
+  }
+   res.status(200).send({ error: null ,saludo})
 })
 // app.get('/', async(req, res, next)=>{
 //     try {

@@ -14,8 +14,7 @@ Esta API permite generar usuarios y mascotas mockeados y almacenarlos en una bas
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
+   git clone https://github.com/JonatanGuinea/backend-III-coderhouse.git
    ```
 
 2. Instala las dependencias:
@@ -52,7 +51,10 @@ Este es el endpoint de prueba. Simplemente devuelve un mensaje.
 
 ```json
 {
-  "message": "Welcome to the Mock API"
+  "error": null,
+  "saludo": {
+    "message": "Welcome to the Mock API"
+  }
 }
 ```
 
